@@ -13,6 +13,8 @@ import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
+// CONTRACT IMPORTS
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
