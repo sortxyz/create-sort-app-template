@@ -9,9 +9,14 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+
+import PushNotifications from './components/PushNotifications';
+import ContractOverview from './components/ContractOverview';
+import Transactions from './components/Transactions';
 
 // CONTRACT IMPORTS
 
@@ -133,7 +138,17 @@ function App() {
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-              CONTRACT_OVERVIEW
+              <Grid container spacing={2}>
+                <Grid item xs={6}>
+                  <ContractOverview contract_address="CONTRACT_ADDRESS" />
+                </Grid>
+                <Grid item xs={6}>
+                  <PushNotifications contract_address="CONTRACT_ADDRESS" />
+                </Grid>
+              </Grid>
+              <Box m={2} pt={3} />
+              <Transactions contract_address="CONTRACT_ADDRESS" />
+              
             </TabPanel>
             <TabPanel value={value} index={1}>
               CONTRACT_READ_FUNCTIONS
