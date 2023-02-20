@@ -139,7 +139,7 @@ function App() {
               CONTRACT_READ_FUNCTIONS
             </TabPanel>
             <TabPanel value={value} index={2}>
-              CONTRACT_WRITE FUNCTIONS
+              CONTRACT_WRITE_FUNCTIONS
             </TabPanel>
           </Box>
         </Container>
