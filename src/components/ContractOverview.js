@@ -86,11 +86,11 @@ const ContractOverview = ({contract_address, title=null, num=3}) => {
                     return res.json()
                 })
                 .then((data) => {
-                    if (data.name) {
+                    if (data && data.name) {
                         setContractName(data.name);
                     }
 
-                    if (data.symbol) {
+                    if (data && data.symbol) {
                         setContractSymbol(data.symbol);
                     }
             })
