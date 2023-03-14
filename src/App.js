@@ -30,7 +30,9 @@ import {
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
- 
+
+// CONTRACT IMPORTS
+
 const { chains, provider } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
   [
@@ -49,8 +51,6 @@ const wagmiClient = createClient({
   connectors,
   provider
 })
-
-// CONTRACT IMPORTS
 
 const darkTheme = createTheme({
   palette: {
