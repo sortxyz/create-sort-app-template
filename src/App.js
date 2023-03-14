@@ -12,9 +12,9 @@ import Grid from '@mui/material/Grid';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import PushNotifications from './components/PushNotifications';
-import ContractOverview from './components/ContractOverview';
-import Transactions from './components/Transactions';
+import PushNotifications from './components/Contract/PushNotifications';
+import ContractOverview from './components/Contract/ContractInfo';
+import Transactions from './components/Contract/LatestTransactions';
 
 import { WagmiConfig, createClient, configureChains } from 'wagmi'
  
