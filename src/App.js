@@ -13,8 +13,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import PushNotifications from './components/Contract/PushNotifications';
-import ContractOverview from './components/Contract/ContractInfo';
-import Transactions from './components/Contract/LatestTransactions';
+import ContractInfo from './components/Contract/ContractInfo';
+import LatestTransactions from './components/Contract/LatestTransactions';
 
 import { WagmiConfig, createClient, configureChains } from 'wagmi'
  
@@ -130,14 +130,14 @@ function App() {
 
                   <Grid container spacing={2}>
                     <Grid item xs={6}>
-                      <ContractOverview contract_address="CONTRACT_ADDRESS" />
+                      <ContractInfo contract_address="CONTRACT_ADDRESS" />
                     </Grid>
                     <Grid item xs={6}>
                       <PushNotifications contract_address="CONTRACT_ADDRESS" />
                     </Grid>
                   </Grid>
                   <Box m={2} pt={3} />
-                  <Transactions contract_address="CONTRACT_ADDRESS" />
+                  <LatestTransactions contract_address="CONTRACT_ADDRESS" />
                   
                 </TabPanel>
                 <TabPanel value={value} index={1}>

@@ -3,7 +3,7 @@ import { Card, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/mat
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const ContractOverview = ({contract_address, title=null, num=3}) => {
+const ContractInfo = ({contract_address, title=null, num=3}) => {
     const [contractName, setContractName] = useState([]);
     const [contractSymbol, setContractSymbol] = useState([]);
     const [numTransactions, setNumTransactions] = useState(null);
@@ -157,4 +157,4 @@ const ContractOverview = ({contract_address, title=null, num=3}) => {
     );
 };
 
-export default ContractOverview;
+export default ContractInfo;

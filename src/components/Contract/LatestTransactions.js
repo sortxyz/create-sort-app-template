@@ -8,7 +8,7 @@ import * as React from 'react';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-export default function Transactions({ title, contract_address }) {
+export default function LatestTransactions({ title, contract_address }) {
     const [transactions, setTransactions] = useState([]);
     
     useEffect(() => {
