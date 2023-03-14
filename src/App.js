@@ -12,7 +12,6 @@ import Grid from '@mui/material/Grid';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { Wallet } from './components/Wallet';
 import PushNotifications from './components/PushNotifications';
 import ContractOverview from './components/ContractOverview';
 import Transactions from './components/Transactions';
