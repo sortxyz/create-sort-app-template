@@ -1,8 +1,9 @@
 import Pusher from 'pusher-js'
 import { Card, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-const PushNotifications = ({contract_address, title=null, num=3}) => {
+export default function PushNotifications({contract_address, title=null, num=3}) {
     const [transactions, setTransactions] = useState([]);
     
     useEffect(() => {
@@ -62,4 +63,8 @@ const PushNotifications = ({contract_address, title=null, num=3}) => {
     );
 };
 
-export default PushNotifications;
+PushNotifications.propTypes = {
+    contract_address: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    num: PropTypes.number.isRequired
+};

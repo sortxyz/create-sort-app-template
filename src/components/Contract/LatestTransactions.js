@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import { Card, CardContent, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 
 import * as React from 'react';
+import PropTypes from 'prop-types';
 
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -79,4 +80,9 @@ export default function LatestTransactions({ title, contract_address }) {
             </CardContent>
         </Card>
     )
+};
+
+LatestTransactions.propTypes = {
+    contract_address: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
 };

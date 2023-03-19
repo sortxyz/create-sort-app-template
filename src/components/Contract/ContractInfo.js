@@ -2,8 +2,9 @@ import Pusher from 'pusher-js'
 import { Card, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
-const ContractInfo = ({contract_address, title=null, num=3}) => {
+export default function ContractInfo ({contract_address, title=null, num=3}) {
     const [contractName, setContractName] = useState([]);
     const [contractSymbol, setContractSymbol] = useState([]);
     const [numTransactions, setNumTransactions] = useState(null);
@@ -157,4 +158,8 @@ const ContractInfo = ({contract_address, title=null, num=3}) => {
     );
 };
 
-export default ContractInfo;
+ContractInfo.propTypes = {
+    contract_address: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    num: PropTypes.number.isRequired
+};
