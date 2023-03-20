@@ -1,5 +1,3 @@
-import Drawer from '@mui/material/Drawer';
-
 // material-ui
 import { Card, CardContent, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 
@@ -35,7 +33,7 @@ export default function LatestTransactions({ title, contract_address }) {
     }
 
     return (
-        <Card title="Hola" content={false}>
+        <Card title={title} content={false}>
             <CardContent>
             <Typography variant="h6" gutterBottom>
                 Latest Transactions
