@@ -22,7 +22,7 @@ function App() {
       <div class="get-started">
         <a href="https://docs.sort.xyz" target="_blank">Get Started</a> with Sort Components
       </div>
-      
+    
     </ThemeProvider>
   );
 }
