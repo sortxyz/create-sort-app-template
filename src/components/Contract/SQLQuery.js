@@ -63,7 +63,7 @@ export default function SQLQuery({ title, query, num }) {
     }
 
     return (
-        <div style={{ height: 400, width: '100%', backgroundColor: "#fff;" }}>
+        <div style={{ height: 400, width: '100%', backgroundColor: "#fff" }}>
                 {columns && results && 
                 <DataGrid
                     rows={results}
